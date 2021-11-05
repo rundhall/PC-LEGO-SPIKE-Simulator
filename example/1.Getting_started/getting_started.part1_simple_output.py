@@ -10,7 +10,6 @@ Paste the code to the Programming Canvas, where you’ll write your code.
 The green lines are simply comments. They won’t influence your program's actions. The other lines are your program. Can you figure out what this first program will do?
 
 Play the program.'''
-import micropython
 # Import the PrimeHub class
 from spike import PrimeHub
 from spike.control import wait_for_seconds
@@ -23,7 +22,7 @@ your_hub.light_matrix.show_image('HEART_SMALL')
 wait_for_seconds(1)
 your_hub.light_matrix.show_image('HAPPY')
 wait_for_seconds(1)
-'''your_hub.light_matrix.show_image('SMILE')
+your_hub.light_matrix.show_image('SMILE')
 wait_for_seconds(1)
 your_hub.light_matrix.show_image('SAD')
 wait_for_seconds(1)
@@ -154,16 +153,10 @@ wait_for_seconds(1)
 your_hub.light_matrix.show_image('ALL_CLOCKS')
 wait_for_seconds(1)
 your_hub.light_matrix.show_image('ALL_ARROWS')
-wait_for_seconds(1)'''
+wait_for_seconds(1)
 your_hub.light_matrix.off()
 
-mem_alloc = gc.mem_alloc()
-mem_free = gc.mem_free()
-capacity = mem_alloc + mem_free
-print("    capacity\tfree\tusage")
-print("    {}\t{}\t{}%".format(capacity, mem_free, int(
-    ((capacity - mem_free) / capacity) * 100.0)))
-micropython.mem_info(1) 
+
 '''Change the image that’s displayed on the Light Matrix.
 Change the parameter "HAPPY" to "HEART" in the code you already have. This will light up the heart instead of the happy face on the Hub.
 Or, copy the code from the box below and paste it after the last line of your program. This will light up the happy face for 5 seconds and then light up a heart for 5 seconds.'''
