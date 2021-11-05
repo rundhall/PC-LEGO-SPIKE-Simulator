@@ -28,15 +28,15 @@ Unofficial PC based LEGO SPIKE simulator in python environment
 	C:\Users\<user name>\AppData\Local\Programs\Python\Python39\Lib\spike
   By default, the debug function is enabled, i.e. all events are printed to the console to help debugging, but this can be disabled at every module file by setting the ISDEBUG variable to False. 
   Simulator can operate in three modes: 
-    - Circular: the simulated value will increase with time, then after reaching the maximum, it will decrease until it reaches the minimum value, from where it will increase again. The cycle alternates forever.  
-    - Random: Returns a random number within the possible range. 
-    - Console: The simulated value is entered on the console by you. The program will not run further until you have entered a value.
+  - Circular: the simulated value will increase with time, then after reaching the maximum, it will decrease until it reaches the minimum value, from where it will increase again. The cycle alternates forever.  
+  - Random: Returns a random number within the possible range. 
+  - Console: The simulated value is entered on the console by you. The program will not run further until you have entered a value.
   The simulator operation can be set separately in each module using the SIMULATORTYPE variable.
   The following parameters can be set in the simulator:
-    - Time between changes: SIMULATORTIME 
-    - the rate of value modification during a change: SIMULATORCHANGE 
-    - The maximum value simulated: SIMULATORSWITCHMAX 
-    - Simulated minimum value: SIMULATORSWITCHMAX 
+  - Time between changes: SIMULATORTIME 
+  - the rate of value modification during a change: SIMULATORCHANGE 
+  - The maximum value simulated: SIMULATORSWITCHMAX 
+  - Simulated minimum value: SIMULATORSWITCHMAX 
 
 4.  Summary
 
